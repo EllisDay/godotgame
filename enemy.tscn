@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqbvnmj4amxjp"]
+
+[ext_resource type="Texture2D" uid="uid://dty2k0ucedbwd" path="res://New Piskel-3.png (2) (2).png" id="1_1iqb7"]
+[ext_resource type="Script" path="res://enemy.gd" id="1_4ap4t"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_4ap4t")
+
+[node name="NewPiskel-3_png(2)(2)" type="Sprite2D" parent="."]
+scale = Vector2(0.60625, 0.60625)
+texture = ExtResource("1_1iqb7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(121, 170, 121, 121, 145, 121, 145, 73, 170, 73, 170, -24, 145, -24, 145, -72, 121, -72, 121, -145, 97, -145, 97, -169, -48, -169, -48, -121, -73, -121, -73, -73, -97, -73, -97, -48, -121, -48, -121, -24, -145, -24, -145, 0, -170, 0, -170, 121, -145, 121, -145, 145, -121, 145, -121, 170)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(55, -24)

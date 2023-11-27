@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddig7sbutuf5h"]
+
+[ext_resource type="Texture2D" uid="uid://cxwwavvckkq0v" path="res://8bitbgdtechno-1.png (4).png" id="1_0oxdf"]
+
+[node name="8Bitbgdtechno-1_png(4)" type="Sprite2D"]
+position = Vector2(576.222, 324)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("1_0oxdf")

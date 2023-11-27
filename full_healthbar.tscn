@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg7i231joljwp"]
+
+[ext_resource type="Texture2D" uid="uid://dvyj4rwqocemt" path="res://8bitbgdtechno-2.png (1).png" id="1_o53dd"]
+
+[node name="healthbar" type="Sprite2D"]
+position = Vector2(576.111, 324.25)
+scale = Vector2(0.47963, 0.47963)
+texture = ExtResource("1_o53dd")

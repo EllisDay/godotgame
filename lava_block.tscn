@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://f3kp70ii1l38"]
+
+[ext_resource type="Texture2D" uid="uid://c3pud60cosebi" path="res://lava_glass.png" id="1_cclc2"]
+[ext_resource type="Script" path="res://CollisionShape2D.gd" id="2_leqbd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rofbw"]
+size = Vector2(967.653, 968.406)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+
+[node name="LavaGlass" type="Sprite2D" parent="."]
+scale = Vector2(0.061, 0.061)
+texture = ExtResource("1_cclc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.061, 0.061)
+shape = SubResource("RectangleShape2D_rofbw")
+script = ExtResource("2_leqbd")

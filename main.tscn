@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://dh22wxgq6fqve"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_3iblb"]
+[ext_resource type="Texture2D" uid="uid://dvg2l4pkk7c5o" path="res://8bitbgdtechno.jpg" id="1_om2i6"]
+[ext_resource type="PackedScene" uid="uid://bgf6q88kryl5r" path="res://lsd_character_body.tscn" id="3_h7xgf"]
+[ext_resource type="PackedScene" uid="uid://fu1scrjowj2s" path="res://floor.tscn" id="4_76j67"]
+[ext_resource type="PackedScene" uid="uid://dqbvnmj4amxjp" path="res://enemy.tscn" id="5_getuf"]
+[ext_resource type="PackedScene" uid="uid://ddig7sbutuf5h" path="res://empty_healthbar.tscn" id="9_svawv"]
+[ext_resource type="PackedScene" uid="uid://6e3njws2eaeg" path="res://barrier.tscn" id="10_h6lnl"]
+[ext_resource type="PackedScene" uid="uid://dg7i231joljwp" path="res://full_healthbar.tscn" id="10_iy2yf"]
+[ext_resource type="PackedScene" uid="uid://f3kp70ii1l38" path="res://lava_block.tscn" id="10_kf8ux"]
+[ext_resource type="Script" path="res://full_healthbar.gd" id="11_djcld"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_3iblb")
+
+[node name="8Bitbgdtechno" type="Sprite2D" parent="."]
+position = Vector2(496.867, 280.75)
+scale = Vector2(0.352102, 0.342361)
+texture = ExtResource("1_om2i6")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_h7xgf")]
+position = Vector2(816, 280)
+scale = Vector2(0.45, 0.45)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("4_76j67")]
+visible = false
+position = Vector2(500, 575)
+scale = Vector2(1.75, 1)
+
+[node name="NewPiskel-3_png(2)(2)" parent="." instance=ExtResource("5_getuf")]
+position = Vector2(70, 289)
+
+[node name="8Bitbgdtechno-1_png(4)" parent="." instance=ExtResource("9_svawv")]
+z_index = 9
+position = Vector2(576, 325)
+
+[node name="healthbar" parent="." instance=ExtResource("10_iy2yf")]
+z_index = 4
+position = Vector2(575, 324)
+scale = Vector2(0.47963, 0.478333)
+script = ExtResource("11_djcld")
+
+[node name="RigidBody2D" parent="." instance=ExtResource("10_kf8ux")]
+position = Vector2(808, -33)
+
+[node name="RigidBody2D2" parent="." instance=ExtResource("10_kf8ux")]
+position = Vector2(662, 392)
+
+[node name="RigidBody2D3" parent="." instance=ExtResource("10_kf8ux")]
+position = Vector2(723, 206)
+
+[node name="RigidBody2D4" parent="." instance=ExtResource("10_kf8ux")]
+position = Vector2(650, 206)
+
+[node name="RigidBody2D5" parent="." instance=ExtResource("10_kf8ux")]
+position = Vector2(734, 428)
+
+[node name="RigidBody2D6" parent="." instance=ExtResource("10_kf8ux")]
+position = Vector2(1030, 3)
+
+[node name="RigidBody2D7" parent="." instance=ExtResource("10_kf8ux")]
+position = Vector2(534, 12)
+
+[node name="RigidBody2D8" parent="." instance=ExtResource("10_kf8ux")]
+position = Vector2(951, 14)
+
+[node name="RigidBody2D9" parent="." instance=ExtResource("10_h6lnl")]
+position = Vector2(1160, 32)

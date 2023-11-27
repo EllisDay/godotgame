@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgf6q88kryl5r"]
+
+[ext_resource type="Texture2D" uid="uid://bauehloqjhp6q" path="res://New Piskel-1.png (1).png" id="1_ccr7l"]
+[ext_resource type="Script" path="res://lsd_character_body.gd" id="1_vv0ki"]
+[ext_resource type="Texture2D" uid="uid://dra8qh4qfcdim" path="res://New Piskel-2.png (1).png" id="3_f43rj"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_vv0ki")
+
+[node name="asset-char" type="Sprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_ccr7l")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-53, 34, -70, 34, -70, -52, -52, -52, -52, -70, -33, -70, -33, -88, -18, -88, -18, -105, -34, -105, -34, -123, -53, -123, -53, -158, -70, -158, -70, -176, -87, -176, -87, -193, -70, -193, -70, -210, -52, -210, -52, -227, -34, -227, -34, -245, 17, -245, 17, -228, 51, -228, 51, -210, 70, -210, 70, -122, 35, -122, 35, -104, 17, -104, 17, -87, 36, -87, 36, -70, 52, -70, 52, -52, 70, -52, 70, 34, 53, 34, 53, -36, 35, -36, 35, 53, 53, 53, 53, 193, 70, 193, 70, 211, 104, 211, 104, 244, 19, 244, 19, 193, 36, 193, 36, 157, 18, 157, 18, 87, -18, 87, -18, 157, -35, 157, -35, 193, -18, 193, -18, 244, -105, 244, -105, 211, -70, 211, -70, 192, -52, 192, -52, 53, -34, 53, -34, -36, -53, -36)
+
+[node name="asset-char-hurt" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_f43rj")
